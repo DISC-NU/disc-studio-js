@@ -6,20 +6,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 <body>
     <h1 class="name">Christopher Song</h1>
-    <img src="./utils/chris_pfp.jpeg" class="profilepic"></img>
+    <img onclick="changeImageSize()" id="profilePic" src="./utils/chris_pfp.jpeg" class="profilepic"></img>
+    <h3 id="imageCaption" class="text-center">Click image to enlarge it</h3>
     <br />
-    <div class="textBox">
+    <div class="textBox" onmouseover="changeDescriptionFont()" onmouseleave="resetFont()">
         <h3>About Me</h3>
-        <p>
+        <p id="description">
             Hi, my name is Christopher Song, and I'm currently a junior
             at Northwestern University studying computer science, math, and
             data science. After graduation, I'm interested in becoming a 
             full-time software developer or a quantitative trader/analyst.
         </p>
     </div>
+    <h3 class="text-center">Hover over text above to underline it</h3>
     <br />
     <div>
         <table>
@@ -48,6 +51,9 @@
             </tr>
         </table>
     </div>
+    <h3 class="text-center">
+        Click each of the table cells above to see an alert message.
+    </h3>
     <br />
     <div class="l-contactme">
         <h3>Contact Me</h3>

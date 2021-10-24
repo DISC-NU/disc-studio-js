@@ -9,6 +9,10 @@ h3 {
     color: #3458eb;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .skills {
     display: flex;
     justify-content: center;
