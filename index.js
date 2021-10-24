@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     [...document.querySelectorAll('td')].map(
         (element) => { 
             const elementText = element.innerHTML;
+            element.onmouseover = () => focusTableCell(element);
+            element.onmouseleave = () => resetTableCell(element);
             element.onclick = () => displayAlert(elementText);
         }
     )
@@ -28,6 +30,18 @@ changeDescriptionFont = () => {
 resetFont = () => {
     let description = document.getElementById('description')
     description.style.textDecoration = '';
+}
+
+focusTableCell = (element) => {
+    element.style.color = 'red';
+    element.style.textDecoration = 'underline solid red 2px';
+    element.style.cursor = 'pointer';
+}
+
+resetTableCell = (element) => {
+    element.style.color = '';
+    element.style.textDecoration = '';
+    element.style.cursor = '';
 }
 
 displayAlert = (alertText) => {
