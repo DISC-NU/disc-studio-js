@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./practiceStyles.css">
+    <script src="solution.js"></script>
+</head>
+<body>
+    <h1 id="welcomeMessage" onmouseover="welcomeMessageColor()" onmouseleave="resetColor()">
+        Welcome to Pizzeria!
+    </h1>
+    <h5 class="instructions">
+        Goal 1: When you hover over the "Welcome..." text above,
+        have the text become a red color. Also have the text return
+        back to black once you hover off of it.
+    </h5>
+    <img src="./utils/pizza.jpeg" id="pizzaImage" onClick="changePizzaSize()"/>
+    <h5 class="instructions">
+        Goal 2: When you click on the pizza image above, have its height
+        become 300px & have it become centered. When you click it again, 
+        it should reset to its default height (175px) and position.
+    </h5>
+    <h3 class="heading-color">Size</h3>
+    <div>
+        <button type="button" class="btn btn-success button-spacing">Small</button>
+        <button type="button" class="btn btn-success button-spacing">Medium</button>
+        <button type="button" class="btn btn-success button-spacing">Large</button>
+    </div>
+    <br />
+    <h3 class="heading-color">Sauce</h3>
+    <div>
+        <button type="button" class="btn btn-danger button-spacing">Red</button>
+        <button type="button" class="btn btn-outline-dark button-spacing">White</button>
+        <button type="button" style="background-color: #a35046;" class="btn btn-primary bbq-color button-spacing">BBQ</button>
+    </div>
+    <br />
+    <h5 class="instructions">
+        Goal 3: When you click on any one of the buttons above,
+        have it display an alert message with the content of the button, e.g.
+        You've clicked on the 'Size: Large' button.
+    </h5>
+    <h3 class="heading-color">Toppings</h3>
+    <div style="margin-left: -10px;" class="container">
+        <div class="left">
+            <div>
+                <input class="form-check-input" type="checkbox" id="mushroom">
+                <label class="form-check-label remove-top-margin" id="mushroomLabel" for="mushroom">
+                Mushrooms
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="cheese">
+                <label class="form-check-label remove-top-margin" id="cheeseLabel" for="cheese">
+                Cheese
+                </label>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <input class="form-check-input" type="checkbox" id="pepperoni">
+                <label class="form-check-label remove-top-margin" id="pepperoniLabel" for="pepperoni">
+                Pepperoni
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="sausage">
+                <label class="form-check-label remove-top-margin" id="sausageLabel" for="sausage">
+                Sausage
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="ham">
+                <label class="form-check-label remove-top-margin" id="hamLabel" for="ham">
+                Ham
+                </label>
+            </div>
+        </div>
+    </div>
+    <br />
+    <h5 class="instructions">
+        Goal 4: When you check a topping box above, have its text turn green.
+        And when you uncheck the box, reset the text color back to black.
+    </h5>
+    <hr class="hr-styling" />
+    <a href="./confirmation.html">
+        <input class="btn btn-primary submit-button" type="button" value="Submit Order">
+    </a>
+</body>
+</html>

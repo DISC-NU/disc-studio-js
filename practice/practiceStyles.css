@@ -1,0 +1,42 @@
+* {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.instructions {
+    color: blue;
+}
+
+.button-spacing {
+    margin-right: 10px;
+}
+
+.heading-color {
+    color: lightseagreen;
+}
+
+.remove-top-margin {
+    margin-top: -5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+} 
+
+.hr-styling {
+    border: 2px solid black;
+}
+
+.submit-button {
+    width: 200px;
+}
